@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require ('mongoose');
 const app = express();
-
+require('dotenv/config');
 
 
 
@@ -14,11 +14,12 @@ app.get('/', (req,res)=>{
 
 app.get('/posts', (req,res)=>{
     res.send('Welcome posts');
-    
+
 });
 
 //connect with mongo DB
-mongoose.connect('mongodb+srv://Raymundo:19831027%Fel@cluster0.pcxue.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', ()=>
+
+mongoose.connect(process.env.DB_connection, ()=>
      console.log('connected to Mongo DB')     
 );  
 
