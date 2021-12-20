@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Raymundo12/iwa-ca1#readme",
   "dependencies": {
+    "body-parser": "^1.19.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.2",
     "mongoose": "^6.1.2",
