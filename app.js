@@ -1,18 +1,21 @@
 const express = require('express');
 const mongoose = require ('mongoose');
 const app = express();
-require('dotenv/config');
 const bodyParser = require('body-parser');
+require('dotenv/config');
+
+app.use(bodyParser.json());
 
 
+const postRoute = require('./routes/posts')
+
+app.use('/posts', postRoute);
 
 //Routes
 app.get('/', (req,res)=>{
     res.send('Welcome Anima');
 
 });
-
-
 
 //connect with mongo DB
 

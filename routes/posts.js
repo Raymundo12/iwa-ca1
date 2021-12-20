@@ -4,13 +4,13 @@ const router = express.Router();
 const Post = require('../models/Post')
 
 
-router.get('/posts', (req,res)=>{
+router.get('/', (req,res)=>{
     res.send('Welcome posts');
 
 });
 
 router.post('/', (req, res) =>{
-    console.log(req,body);
+    console.log(req.body);
 
 });
 
