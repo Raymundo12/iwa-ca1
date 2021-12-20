@@ -12,10 +12,7 @@ app.get('/', (req,res)=>{
 
 });
 
-app.get('/posts', (req,res)=>{
-    res.send('Welcome posts');
 
-});
 
 //connect with mongo DB
 
