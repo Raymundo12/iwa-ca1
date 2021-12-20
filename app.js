@@ -14,8 +14,13 @@ app.get('/', (req,res)=>{
 
 app.get('/posts', (req,res)=>{
     res.send('Welcome posts');
-
+    
 });
+
+//connect with mongo DB
+mongoose.connect('mongodb+srv://Raymundo:19831027%Fel@cluster0.pcxue.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', ()=>
+     console.log('connected to Mongo DB')     
+);  
 
 
 app.listen(3000);
