@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Raymundo12/iwa-ca1#readme",
   "dependencies": {
     "express": "^4.17.2",
+    "mongoose": "^6.1.2",
     "nodemon": "^2.0.15"
   }
 }
