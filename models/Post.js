@@ -4,14 +4,14 @@ const { intersects } = require('semver');
 const PostSchema = mongoose.Schema({
    title: {
       type: String,
-      required : true
+   
    },
 
    description: {
       type: String,
-      required: true
+     
    },
          
 });
 
-module.exports = mongoose.model('posts', PostSchema);
+module.exports = mongoose.model('Entrada', PostSchema);
