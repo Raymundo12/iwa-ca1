@@ -27,14 +27,17 @@ app.get('/', (req,res)=>{
         Genre: 'book Genre 2',
         Published: new Date(), 
    }]
-    res.render('Allbooks/index', {Allbooks : Allbooks})
+    res.render('Allbooksindex', {Allbooks : Allbooks})
 
 });
 
 //connect with mongo DB
 
 mongoose.connect(process.env.DB_connection, ()=>
-     console.log('connected to Mongo DB')     
+     console.log('connected to Mongo DB'),     
+     {useNewUrlParser: true, userUnifiedTopology: true 
+
+     }
 );  
 
 
