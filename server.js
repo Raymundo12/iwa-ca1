@@ -15,7 +15,19 @@ app.use('/books', AllbooksRoute)
 
 //Routes
 app.get('/', (req,res)=>{
-    res.render('index')
+   const Allbooks = [{
+     title: 'First book',
+     author: 'book author',
+     Genre: 'book Genre',
+     Published: new Date(),
+   },
+   {
+        title: 'First book 2',
+        author: 'book author 2',
+        Genre: 'book Genre 2',
+        Published: new Date(), 
+   }]
+    res.render('Allbooks/index', {Allbooks : Allbooks})
 
 });
 

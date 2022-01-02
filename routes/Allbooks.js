@@ -4,8 +4,8 @@ const router = express.Router();
 const Post = require('../models/Post')
 
 
-router.get('/', (req,res)=>{
-    res.send('Welcome to Anima');
+router.get('/new', (req,res)=>{
+    res.render('Allbooks/new');
 
 });
 
