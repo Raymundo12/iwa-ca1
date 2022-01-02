@@ -188,7 +188,7 @@
     "yallist": "^4.0.0"
   },
   "scripts": {
-     "devstart": "nodemon server.js"
+    "devstart": "nodemon server.js"
   },
   "repository": {
     "type": "git",
