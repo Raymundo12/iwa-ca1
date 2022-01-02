@@ -4,6 +4,8 @@ const app = express();
 const bodyParser = require('body-parser');
 require('dotenv/config');
 
+app.set('Gui engine', 'ejs')
+
 app.use(bodyParser.json());
 
 
