@@ -15,7 +15,7 @@ app.use('/posts', postRoute);
 
 //Routes
 app.get('/', (req,res)=>{
-    res.send('Welcome Anima');
+    res.render('index')
 
 });
 
