@@ -4,7 +4,7 @@ const app = express()
 
 app.set('view engine', 'ejs')
 
-app.use(booksRouter)
+app.use('/books', booksRouter)
 
 app.get ('/', (req,res) => {
     res.render('index')
