@@ -9,9 +9,9 @@ app.set('Gui engine', 'ejs')
 app.use(bodyParser.json());
 
 
-const postRoute = require('./routes/posts')
+const AllbooksRoute = require('./routes/Allbooks')
 
-app.use('/posts', postRoute);
+app.use('/books', AllbooksRoute)
 
 //Routes
 app.get('/', (req,res)=>{

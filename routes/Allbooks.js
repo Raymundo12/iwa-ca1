@@ -5,7 +5,7 @@ const Post = require('../models/Post')
 
 
 router.get('/', (req,res)=>{
-    res.send('Welcome posts');
+    res.send('Welcome to Anima');
 
 });
 
