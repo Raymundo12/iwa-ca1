@@ -119,6 +119,7 @@
     "mquery": "^4.0.0",
     "ms": "^2.1.3",
     "negotiator": "^0.6.2",
+    "node.js": "^0.0.1-security",
     "nopt": "^1.0.10",
     "normalize-path": "^3.0.0",
     "normalize-url": "^4.5.1",
