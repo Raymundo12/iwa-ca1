@@ -8,8 +8,14 @@
     <title>Lets do it</title>
 </head>
 <body>
- <div class="container"></div>
- <hi class="mb-4">Library anima</hi> 
- <a href="books//new" class= "btn btn-success">New Books</a>
+ <div class="container">
+ <h1 class="mb-4">Library anima</h1> 
+ <a href="books/new" class= "btn btn-success">New Books</a>
+ <% books.forEach(book => { %>
+ <div class="Card mt-4">
+     <%= book.title %>
+ </div>
+  <%  }) %>
+</div>
 </body>
 </html>
