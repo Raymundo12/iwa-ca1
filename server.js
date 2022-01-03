@@ -9,7 +9,7 @@ app.use('/books', booksRouter)
 app.get ('/', (req,res) => {
     const books = [{ 
         title: 'Test article',
-        descrption: 'Test description',
+        description: 'Test-description',
         Published: new Date(),
     }]
     res.render('index', {books: books})
