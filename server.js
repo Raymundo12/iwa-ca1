@@ -10,9 +10,14 @@ app.get ('/', (req,res) => {
     const books = [{ 
         title: 'Test article',
         description: 'Test-description',
-        Published: new Date(),
+        Published: new Date()
+    },
+    {
+        title: 'Test article 2',
+        description: 'Test-description 2',
+        Published: new Date()
     }]
-    res.render('index', {books: books})
+    res.render('books/index', {books: books})
 
 })
    
