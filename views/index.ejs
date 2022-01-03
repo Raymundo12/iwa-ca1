@@ -13,7 +13,10 @@
  <a href="books/new" class= "btn btn-success">New Books</a>
  <% books.forEach(book => { %>
  <div class="Card mt-4">
-     <%= book.title %>
+     <div class="Card-body">
+         <h4 class="Card-title"><%= book.title %></h4> 
+     
+    </div>
  </div>
   <%  }) %>
 </div>

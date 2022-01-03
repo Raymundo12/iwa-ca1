@@ -7,7 +7,7 @@ app.set('view engine', 'ejs')
 app.use('/books', booksRouter)
 
 app.get ('/', (req,res) => {
-    const Books = [{ 
+    const books = [{ 
         title: 'Test article',
         descrption: 'Test description',
         Published: Date()
