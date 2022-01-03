@@ -17,7 +17,7 @@ app.get ('/', (req,res) => {
         description: 'Test-description 2',
         Published: new Date()
     }]
-    res.render('books/index', {books: books})
+    res.render('newbooks/index', {books: books})
 
 })
    
