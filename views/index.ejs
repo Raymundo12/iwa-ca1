@@ -15,7 +15,9 @@
  <div class="Card mt-4">
      <div class="Card-body">
          <h4 class="Card-title"><%= book.title %></h4> 
-     
+         <div class="Card-subtitle text-muted mb-2">
+             <%= book.Published.toLocalDate() %>
+         </div> 
     </div>
  </div>
   <%  }) %>
