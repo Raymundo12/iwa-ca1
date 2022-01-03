@@ -8,6 +8,7 @@ mongoose.connect('mongodb://localhost/blog')
 app.set('view engine', 'ejs')
 
 app.use('/books', booksRouter)
+app.use(express.urlencoded({ extended: false}))
 
 app.get ('/', (req,res) => {
     const books = [{ 
