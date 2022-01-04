@@ -5,7 +5,9 @@ const router = express.Router()
 router.get('/new', (req, res) => {
    res.render('newbooks/new')
 })
-router.get
+router.get('/:id', (req,res)=>{
+
+})
 
 router.post('/', async (req,res)=> {
   const book = new Book({
@@ -17,8 +19,8 @@ router.post('/', async (req,res)=> {
   book = await book.save()
   res.redirect('/books/${book.id}')
 }catch (e) {
-   
-      }
+    res.render('books/new', {book: book})
+}
 })
 
 module.exports = router 

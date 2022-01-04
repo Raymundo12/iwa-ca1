@@ -2,8 +2,11 @@ const express = require ('express')
 const mongoose = require ('mongoose')
 const booksRouter = require('./routes/books')
 const app = express()
+require('dotenv/config')
 
-mongoose.connect('mongodb://localhost/blog')
+mongoose.connect(
+     pprocess.env.DB_connection   
+)
 
 app.set('view engine', 'ejs')
 
