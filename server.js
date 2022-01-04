@@ -1,13 +1,14 @@
 const express = require ('express')
 const mongoose = require ('mongoose')
+require('dotenv/config')
 const booksRouter = require('./routes/books')
 const app = express()
-require('dotenv/config')
+
 
 mongoose.connect(
      process.env.DB_CONNECTION,
      () => console.log ('connected to DB')   
-)
+);
 
 app.set('view engine', 'ejs')
 
