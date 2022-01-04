@@ -71,6 +71,7 @@
     "graceful-fs": "^4.2.8",
     "has-flag": "^3.0.0",
     "has-yarn": "^2.1.0",
+    "heroku": "^7.59.2",
     "http-cache-semantics": "^4.1.0",
     "http-errors": "^1.8.1",
     "iconv-lite": "^0.4.24",
