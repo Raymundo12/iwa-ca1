@@ -1,19 +1,16 @@
 const express = require ('express')
 const mongoose = require ('mongoose')
-require('dotenv/config')
+
 const booksRouter = require('./routes/books')
 const app = express()
 
 
-mongoose.connect(
-     process.env.DB_CONNECTION,
-     () => console.log ('connected to DB')   
-);
 
 app.set('view engine', 'ejs')
 
-app.use('/books', booksRouter)
 app.use(express.urlencoded({ extended: false}))
+
+
 
 app.get ('/', (req,res) => {
     const books = [{ 
@@ -29,6 +26,7 @@ app.get ('/', (req,res) => {
     res.render('newbooks/index', {books: books})
 
 })
+app.use('/books', booksRouter)
    
 app.listen(8000);
 
