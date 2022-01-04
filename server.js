@@ -5,7 +5,8 @@ const app = express()
 require('dotenv/config')
 
 mongoose.connect(
-     pprocess.env.DB_connection   
+     process.env.DB_CONNECTION,
+     () => console.log ('connected to DB')   
 )
 
 app.set('view engine', 'ejs')
