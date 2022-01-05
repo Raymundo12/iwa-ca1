@@ -9,7 +9,7 @@ router.get('/:id', (req,res)=>{
 
 })
 
-router.post('/', async (req,res)=> {
+router.post('/', async (req, res)=> {
   const book = new Book({
       title: req.body.title,
       description: req.body.description,
@@ -17,7 +17,7 @@ router.post('/', async (req,res)=> {
   })
   try {
   book = await book.save()
-  res.redirect('/books/${book.id}')
+  res.redirect('/newbooks/${book.id}')
 }catch (e) {
     res.render('books/new', {book: book})
 }
