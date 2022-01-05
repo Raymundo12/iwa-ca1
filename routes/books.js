@@ -6,11 +6,11 @@ router.get('/new', (req, res) => {
    res.render('newbooks/new', {book: new Book() })
 })
 router.get('/:id', (req,res)=>{
-
+ res.send(req.params.id)
 })
 
 router.post('/', async (req, res)=> {
-  const book = new Book({
+  let book = new Book({
       title: req.body.title,
       description: req.body.description,
       date: req.body.date
