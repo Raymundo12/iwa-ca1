@@ -3,7 +3,7 @@ const Book = require('./../models/book')
 const router = express.Router()
 
 router.get('/new', (req, res) => {
-   res.render('newbooks/new')
+   res.render('newbooks/new', {book: new Book() })
 })
 router.get('/:id', (req,res)=>{
 
@@ -23,8 +23,4 @@ router.post('/', async (req, res)=> {
 }
 })
 
-module.exports = router 
-
-
-
-
+module.exports = router

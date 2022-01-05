@@ -1,15 +1,15 @@
 <div class="form-group">
     <label for="title">Title</label>
-    <input required value="<%= book.title %>>"
+    <input required value="<%= book.title %>"
     type="text" name="title" id="title" class="form-control">
 </div>
 <div class="form-group">
     <label for="title">Description</label>
-    <textarea name="description" id="description" class="form-control"></textarea>
+    <textarea name="description" id="description" class="form-control"><%= book.description %></textarea>
 </div>    
 <div class="form-group">
     <label for="title">Published</label>
-    <textarea name="Published" id="Published" class="form-control"></textarea>
+    <textarea required name="Published" id="Published" class="form-control"><%= book.Published %></textarea>
 </div>
     <a href="/" class="btn btn-secondary">Cancel</a>
     <button type="submit" class="btn btn-primary">Save</button>
