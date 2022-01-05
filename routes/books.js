@@ -17,9 +17,9 @@ router.post('/', async (req, res)=> {
   })
   try {
   book = await book.save()
-  res.redirect('/newbooks/${book.id}')
+  res.redirect('/books/${book.id}')
 }catch (e) {
-    res.render('books/new', {book: book})
+    res.render('newbooks/new', {book: book})
 }
 })
 
