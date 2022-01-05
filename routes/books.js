@@ -5,8 +5,10 @@ const router = express.Router()
 router.get('/new', (req, res) => {
    res.render('newbooks/new', {book: new Book() })
 })
-router.get('/:id', (req,res)=>{
- res.send(req.params.id)
+router.get('/:id', async (req,res)=>{
+  const book = await Book.findById(req.params.id)
+  if (book == null) res.redirect('/')
+  res.render('books/show', { book: book})
 })
 
 router.post('/', async (req, res)=> {
