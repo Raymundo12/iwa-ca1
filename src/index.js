@@ -1,9 +1,9 @@
 const app = require('../app');
 
+async function main () {
+  await app.listen(app.get('port'));
+  console.log('server running on port', app.get('port'));
 
+}
 
-
-app.listen(8000, () => {
-    console.log('Server running on port 8000')
-
-})
+main ();
