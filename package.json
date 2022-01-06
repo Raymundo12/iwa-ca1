@@ -2,7 +2,26 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.2",
-    "node": "^17.3.0",
+    "node": "^17.3.0"
+  },
+  "name": "init",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "scripts": {
+    "devStart": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raymundo12/iwa-ca1.git"
+  },
+  "author": "Raymundo Olvera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raymundo12/iwa-ca1/issues"
+  },
+  "homepage": "https://github.com/Raymundo12/iwa-ca1#readme",
+  "description": ""
 }
