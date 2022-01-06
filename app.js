@@ -14,10 +14,13 @@ app.use(express.urlencoded({extended: false}))
 
 
 //Routes
+app.use(require('./routes/index'))
 
 
 
 //Statics
+app.use(express.static(path.join(__dirname, 'public')))
+
 
 module.exports = app;
 
