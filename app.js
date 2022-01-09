@@ -14,7 +14,7 @@ app.use(express.urlencoded({extended: false}))
 
 
 //Routes
-app.use(require('./routes/index'))
+app.use(require('./src/routes/index'))
 
 
 

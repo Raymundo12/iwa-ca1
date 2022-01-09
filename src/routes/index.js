@@ -1,7 +1,12 @@
 const { Router} = require('express');
 const res = require('express/lib/response');
-const { route } = require('../app');
-const router = Router()
+const router = Router();
+
+router.get('/', (req,res) => {
+    res.render('index.ejs')
+})
+
+
 
 module.exports = router;
 
